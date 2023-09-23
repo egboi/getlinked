@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/mike-log.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script src="" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="logo">get<span class="span-logo">linked</span></h1>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="side-bar">
+            <a href="#" class="close">&times</a>
+            <ul class="menu">
+                <li class="item"><a class="sub-btn">Timeline</a></li>
+                <li class="item"><a class="sub-btn">Overview</a></li>
+                <li class="item"><a class="sub-btn">FAQs</a></li>
+                <li class="item"><a class="sub-btn">Contact</a></li>
+                <li class="item"><a class="sub-btn"><button id="reg">Register</button></a></li>
+                
+            </ul>
+
+        </div>
+        
+
+        <div class="contact">
+            <!--
+                <img src="images/Purple-Lens-Flare-PNG-mobile.png" class="contact-lens1">
+            -->
+            <div class="contact-div1">
+                <h1>Get in touch</h1><br><br>
+                <p class="p1">Contact<br>Information</p><br><br>
+                <p class="p2">27, Alara Street<br>Yaba 100012<br>Lagos State</p><br><br>
+                <p class="p3">Call Us: 07067981819</p><br><br>
+                <p class="p4">we are open from Monday-Friday<br>08:00am-05:00pm</p><br><br>
+                <p class="p5"> Share on</p>
+            </div>
+
+            <div class="contact-div2">
+                <h1>Question or need assistance?<br> Let us know about it!</h1>
+                <h2>Quesion or need <br>assistance<br>Let us knowabout it</h2>
+                <p>Email us below to any question related <br>to our event</p>
+                
+                <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="First Name" class="fname"><br><br>
+                        <input type="text" placeholder="First Name" class="fname"><br><br>
+                        <textarea name="message" id="" cols="35" rows="5" placeholder="Message"></textarea><br><br>
+                        <button>Register</button>
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+        <script src="advance-navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="image-slide.js"></script>
+
+    </body>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/mike-log.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script src="" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 class="logo">get<span class="span-logo">linked</span></h1>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="side-bar">
+            <a href="#" class="close">&times</a>
+            <ul class="menu">
+                <li class="item"><a class="sub-btn">Timeline</a></li>
+                <li class="item"><a class="sub-btn">Overview</a></li>
+                <li class="item"><a class="sub-btn">FAQs</a></li>
+                <li class="item"><a class="sub-btn">Contact</a></li>
+                <li class="item"><a class="sub-btn"><button id="reg">Register</button></a></li>
+                
+            </ul>
+
+        </div>
+        
+
+        <div class="register">
+            <!--
+                <img src="images/Purple-Lens-Flare-PNG-mobile.png">
+            -->
+
+            <div class="register-div1">
+                <!--<img src="images/star pu.png" alt="" class="star-sec6">    
+                <img src="images/star.png" alt="" class="star-sec6a">    
+                <img src="images/star.png" alt="" class="star-sec6b">    
+                -->
+
+                <img src="images/3d-graphic-designer-showing-thumbs-up-png 1.png" alt="" class="graphic">
+            </div>
+            
+            <div class="register-div2">
+                <div class="register-head">
+                    <div>
+                        <h1>Register</h1>
+                        <p>Be part of this movement!<span>...........................</span></p>
+                        <div id="people">
+                            <img    src="images/1f6b6-2640.png" alt="">
+                            <img src="images/image_processing20200511-10310-13mnlsx.png" alt="">
+                        </div>
+                        <h2 class="account">CREATE YOUR ACCOUNT</h2>
+                    </div>
+                    
+                </div>
+            
+                <div class="form">
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td><Label>Team's Name</Label></td>
+                                <td><Label>Phone</Label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Enter the name of your group"></td>
+                                    <td><input type="text" placeholder="Enter your phone number"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td><Label>Email</Label></td>
+                                <td><Label>Project Topic</Label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Enter your email address"></td>
+                                <td><input type="text" placeholder="What is your group project topic"></td>
+                            </tr>
+                            <tr>
+                                <td><Label>Category</Label></td>
+                                <td><Label>Group Size</Label></td>
+                            </tr>
+                            <tr>
+                                <td><select name="" id="" class="list">
+                                    <option value="">Select your category</option>
+                                </select></td>
+                                <td><select name="" id="" class="list">
+                                    <option value="">Select</option>
+                                </select></td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="2"><p class="p1">Please review your registration details before submitting</p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="p2">I agreed with the event terms and conditions and privacy policy</p></td>
+                            </tr>
+                        </table>
+                            <button>Register</button>
+                    </form>
+                </div>
+
+            </div>  
+            
+        </div>
+
+        <div class="form2">
+            <h1>Register</h1>
+            <img src="images/3d-graphic-designer-showing-thumbs-up-png 2.png" alt="">
+            <div class="mobile">
+                <form action="">
+                    <Label>Team's Name</Label><br>
+                    <input type="text" placeholder="Enter the name of your group"><br>
+
+                    <Label>Phone</Label><br>
+                    <input type="text" placeholder="Enter your phone number"><br>
+
+                    <Label>Email</Label><br>
+                    <input type="text" placeholder="Enter your email address"><br>
+
+                    <Label>Project topic</Label><br>
+                    <input type="text" placeholder="What is your group project topic"><br>
+
+                
+            <div class="group-category">
+                <div class="category">
+                    <Label>Category</Label><br>
+                    <select name="" id="" class="list2"><option value="" >Select your category</option></select>
+                </div>
+
+                <div class="group">
+                    <Label>Group Size</Label><br>
+                    <select name="" id="" class="list3"><option value="">Select</option></select>
+                </div>
+            </div>
+
+                    <p class="p1">Please review your registration details before submitting</p>
+                    
+                <div class="check1">
+                    <input type="checkbox" class="checkbox">
+                    <p class="p2">I agreed with the event terms and conditions <br>and privacy policy</p>
+                </div>
+                
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+        <script src="advance-navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="image-slide.js"></script>
+    </div>
+    <section class="section-div">
+        <div class="section-div5">
+
+        </div>
+        <div class="section-div6">
+
+        </div>
+    </section>
+    </body>
